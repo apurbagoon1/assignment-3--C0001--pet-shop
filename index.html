@@ -4,11 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pet Shop</title>
+
+    <!-- Google Font CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Sora:wght@100..800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+    .adlam-display-font {
+        font-family: "ADLaM Display", serif;
+    }
+       
+    .sora-font {
+        font-family: "Sora", serif;
+    }
+    </style>
 </head>
-<body>
+<body class="sora-font">
     <header>
+      <!-- Nav-bar Starts -->
+      <nav class="md:flex md:justify-around items-center justify-start bg-[#FFF9F4] py-6 px-6 md:px-0">
+        <div class="flex justify-between items-center">
+            <a class="flex items-center gap-3" href="">
+              <img class="w-12" src="c1-assets/logo-header.png" alt="logo">
+              <h3 class="text-3xl invisible md:visible">Browse<span class="text-[#FFDC26]">4</span>Pets</h3>
+            </a>
+            <div class="md:hidden">
+                <i class="fa-solid fa-bars text-3xl cursor-pointer"></i>
+            </div>
+        </div>
+
+        <div class="hidden md:contents">
+            <ul class="flex md:gap-2 lg:gap-8">
+                <li class="list-none"><a class="hover:text-[#FFDC26] text-xl" href="">Find a pet</a></li>
+                <li class="list-none"><a class="hover:text-[#FFDC26] text-xl" href="">Breeds</a></li>
+                <li class="list-none"><a class="hover:text-[#FFDC26] text-xl" href="">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <div class="md:flex items-center gap:2 lg:gap-4 hidden">
+            <i class="fa-regular fa-bell text-2xl cursor-pointer hover:text-[#FFDC26]"></i>
+            <i class="fa-solid fa-magnifying-glass text-2xl cursor-pointer hover:text-[#FFDC26]"></i>
+            <button class="text-xl border border-[#FFDC26] rounded-lg px-8 py-3 hover:bg-[#FFDC26]">Login</button>
+            <button class="text-xl hover:border hover:border-[#FFDC26] hover:bg-[#FFF9F4] rounded-lg px-8 py-3 bg-[#FFDC26]">Register</button>
+        </div>
+    </nav>
 
     </header>
 
