@@ -12,6 +12,9 @@
 
     <!-- Font Awesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- Animate.css CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -23,6 +26,15 @@
        
     .sora-font {
         font-family: "Sora", serif;
+    }
+
+    @keyframes floating {
+        0% { transform: translateY(0px); }
+        50% { transform: translateY(-10px); }
+        100% { transform: translateY(0px); }
+    }
+    .animate__floating {
+        animation: floating 3s ease-in-out infinite;
     }
     </style>
 </head>
@@ -64,10 +76,10 @@
             <div class="w-full lg:w-1/2 space-y-6 lg:space-y-8 relative z-10">
                 <h1 class="adlam-display-font text-5xl lg:text-6xl ">Pamper Your Pet, Because They Deserve the Bes</h1>
                 <p class="opacity-70 text-xl leading-5">Discover a world of treats, toys, and essentials handpicked for your furry friends. Shop now and make tails wag with joy!</p>
-                <button class="text-xl hover:border hover:border-[#FFDC26] hover:bg-[#FFF9F4] rounded-lg px-8 py-3 bg-[#FFDC26]">Find a pet</button>
+                <button class="text-xl hover:border hover:border-[#FFDC26] hover:bg-[#FFF9F4] rounded-lg px-8 py-3 bg-[#FFDC26] animate-pulse">Find a pet</button>
             </div>
 
-            <div class="relative -top-28 lg:-top-80 ">
+            <div class="relative -top-28 lg:-top-80 animate__animated animate__infinite animate__slow animate__floating">
                 <img class="w-[100%]" src="c1-assets/cat-big.png" alt="cat">
             </div>
         </section>
